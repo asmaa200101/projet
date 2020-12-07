@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Quize+Mariam+Ait+Lhoussain</title>
+	<script type="text/javascript">
+		function FormResultat2()
+		{
+			var total=0;
+			if ( document.getElementById("Q1r3").checked==true)
+			{
+			 total+=10;
+			}
+			if (document.getElementById("Q2r2").checked==true)
+			{
+				total+=10;
+			}
+			if(document.Form3.Q3[0].checked==false && document.Form3.Q3[1].checked==false && document.Form3.Q3[2].checked==true && document.Form3.Q3[3].checked==true && document.Form3.Q3[4].checked==false && document.Form3.Q3[5].checked==true && document.Form3.Q3[6].checked==true && Form3.Q3[7].checked==true)
+			{
+				total+=10;
+			}
+			if (document.Form6.Q6[0].checked==false && document.Form6.Q6[1].checked==true && document.Form6.Q6[2].checked==false)
+			{
+				total+=10;
+			}
+			 var options = document.getElementById("datalist1").options; 
+            for (var i = 0; i < options.length; i++) 
+            {
+            	if(document.getElementById("input").value =="Le prtugais")
+             	{
+             		total+=10;
+             		break;
+             	}
+            }
+            var options2=document.getElementById("datalist2").options;
+            for(var i=0;i<options2.length;i++)
+            {
+            	if (document.getElementById("input2").value=="Ch.lagarde")
+            	{
+            		total+=10;
+            		break;
+            	}
+            }
+            var se1=document.forms["Form5"].elements["S2"].selectedIndex;
+            if(se1==1)
+            {
+            	total+=10;
+            }
+			var se2 = document.forms["Form4"].elements["s1"].selectedIndex;
+			if(se2==2)
+			{
+				total+=10;
+			}
+			if(document.getElementById("rd2").checked==true)
+			{
+				total+=10; 
+			}
+			var V1 =document.getElementById("idtxt1").value;
+			if(V1.toUpperCase()=="BASTIDE")
+			{
+				total+=10;
+			}
+	    document.getElementById("lbl").innerHTML= "le resultat est:"+total;
+	    }
+	</script>
+	<style type="text/css">
+		body
+		{
+			background-color:#f8f0d0;
+		}
+		#lblstyl
+		{
+            color: #B4886B;
+            font-weight: bold;
+            width: 150px;
+            font-size: 20px
+		}
+		h1
+		{
+			font-size: 35px;
+			font-family: "Algerian";
+            font-style: normal;
+            font-weight: 400
+            border-width:1px 2px 3px 2px;
+            border-style:solid dotted;
+            border-color:black ;
+            background-color: #eaf0bd;
+          
+		}
+	</style>
+</head>
+<body>	
+<center><h1>Quizz de culture générale</h1></center>	
+
+
+	<form name="Form1">
+		<label id ="lblstyl">1_ Quell est le capetale de<strong>Maroc</strong> </label><br>
+        <input type="radio" name="Q1" id="Q1r1" >Fes<br>
+        <input type="radio" name="Q1" id="Q1r2" >Jdida<br>
+        <input type="radio" name="Q1" id="Q1r3" >Raba<br>
+        <input type="radio" name="Q1" id="Q1r4" >Casablanca<br>
+	</form>
+<br>
+	<form name="Form2">
+	   <label id ="lblstyl">2_ Quelle est la capitale de la <strong>Nouvelle-Zélande</strong> ? </label><br>
+	    <input type="radio" name="Q2" id="Q2r1"  >Dublin<br>
+        <input type="radio" name="Q2" id="Q2r2" >Wellington<br>
+        <input type="radio" name="Q2" id="Q2r3" >Auckland<br>
+        <input type="radio" name="Q2" id="Q2r4" >Sydney<br>
+	</form>
+<br>
+	<form name="Form3" >
+	<label id ="lblstyl">3_Quels sont les pays appartenant au Union du Maghreb arabe</label><br>
+	<input type="checkbox"  name ="Q3" id="cb31" /><label for ="cb1">Egypte</label> 
+	<input type="checkbox" name ="Q3" id ="cb32" /><label for ="cb2">Arabie Saoudite </label> 
+	<input type="checkbox" name ="Q3" id="cb33" /><label for ="cb3">Libye </label> 
+	<input type="checkbox" name ="Q3" id="cb34" /><label for ="cb4">Mauritanie  </label> 
+	<input type="checkbox" name ="Q3" id="cb35" /><label for ="cb5"> Soudan</label> 
+	<input type="checkbox" name ="Q3" id="cb36" /><label for ="cb6"> Algérie  </label> 
+	<input type="checkbox" name ="Q3" id="cb37" /><label for ="cb7"> Tunisie </label> 
+	<input type="checkbox" name ="Q3" id="cb38" /><label for ="cb8"> Maroc </label> 
+	 <br>
+	</form>
+
+	<br>
+	
+	<form name= "Form4">
+	<label id ="lblstyl">4_Qelle est le capital de<strong> Algérie</strong></label><br>
+	<select id="s1">
+	<option >wahran</option>
+	<option >mlilya</option>
+	<option >Algérie</option>
+	</select>	
+	<br>
+	</form>	  
+	<br>
+
+<form name ="Form5">
+	<label id ="lblstyl">5_Quel est le peintre de <strong> Mona Lisa</strong>  ?</label><br>
+	<select name="S2" id="S2">
+<option > Van Gogh.</option>
+<option>leonardo da vinci</option>
+<option >Francisco de Goya</option>
+</select>  
+<br>
+</form>
+		<br>
+<form name="Form6" >
+	<label id ="lblstyl">6_Qelle est le capitale de <strong>france</strong>?</label><br>
+	 <input type="checkbox" name ="Q6" id="cb61" /><label for ="cb61">Tolouse  </label> 
+	 <input type="checkbox" name ="Q6" id ="cb62"/><label for ="cb62"> Paris  </label> 
+	  <input type="checkbox" name ="Q6" id="cb63" /><label for ="cb63">Marsay  </label> 
+	  <br>
+	</form>
+	
+	<br>
+<form name ="Form7">
+	<label id ="lblstyl">7_Quel la langue parler au<strong> Mosmbique</strong> ?</label>
+	<input list ="datalist1" id="input">
+<datalist id ="datalist1">
+<option value ="Espagnol">
+<option value ="Le prtugais">
+<option value ="L'anglais">
+</datalist>	 
+</form>
+<br>
+<form name="Form8">
+	<label id ="lblstyl">8_Qui est l'actuel <strong>president du FMI</strong> ?</label>
+<input list ="datalist2" id ="input2">
+<datalist id ="datalist2">
+	<option value ="D.Strsuss-ky">
+	<option value ="Ch.lagarde">
+    <option value ="P.lamy">
+</datalist>		  
+
+</form>
+<br>
+<form name="Form9">
+<label id="lblstyl">9_<strong>Au Moyen-Âge</strong> , comment appelait-on les villages fortifiés ?</label>
+<ul>
+	<li>Tour</li>
+	<li>Bastide</li>
+	<li>Château fort</li>
+	<li>Rempart</li>
+</ul>
+ Tappez la bonne reponse:<input type="text" id ="idtxt1">
+</form>
+
+<br>
+<form name ="Form10">
+	<label id ="lblstyl">10_Près de quelle capitale embarque-t-on au <strong>port du Pirée</strong> ? </label>	<br>
+	<input type="radio" name="Q10" id="rd1" ><label for ="rb1">Nicosue </label> <br>
+    <input type="radio" name="Q10" id="rd2" ><label for ="rb2">Athnes</label> <br>
+    <input type="radio" name="Q10" id="rd3" ><label for ="rb2">Tirana </label> <br>	  
+	<br>
+</form>
+<br>
+<form name ="formResultat">
+<table>
+	<tr>
+		<input type="button" name="btn" value ="Valider" onclick="FormResultat2()">
+	</tr>
+	<tr>
+		<input type="button" name="btnInsialise" value="Ineslialiser">
+	</tr>
+</table>
+</form>
+
+<label id ="lbl"></label>
+
+</body>
+</html>
